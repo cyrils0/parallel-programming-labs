@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Sarychev/parallel-programming-labs/build",
+  "command": "C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++latest -MDd -RTC1 -Zi @lab1\\CMakeFiles\\lab1.dir\\main.cpp.obj.modmap /Folab1\\CMakeFiles\\lab1.dir\\main.cpp.obj /Fdlab1\\CMakeFiles\\lab1.dir\\ /FS -c C:\\Sarychev\\parallel-programming-labs\\lab1\\main.cpp",
+  "file": "C:/Sarychev/parallel-programming-labs/lab1/main.cpp",
+  "output": "C:/Sarychev/parallel-programming-labs/build/lab1/CMakeFiles/lab1.dir/main.cpp.obj"
+}
+]

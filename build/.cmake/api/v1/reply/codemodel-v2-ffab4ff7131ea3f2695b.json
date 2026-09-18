@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "__CMAKE::CXX23::@e3a54a2ab40fd51109ef",
+					"jsonFile" : "target-__CMAKE__CXX23-Debug-245d3c297f26b35105df.json",
+					"name" : "__CMAKE::CXX23",
+					"projectIndex" : 1
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : "lab1",
+					"jsonFile" : "directory-lab1-Debug-68425d42d47495b00a01.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lab1",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "parallel-programming-labs"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "lab1",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "__CMAKE__CXX23@synth_5f8fa36c6907::@e3a54a2ab40fd51109ef",
+					"jsonFile" : "target-__CMAKE__CXX23@synth_5f8fa36c6907-Debug-1a0b2f5b0aef10517328.json",
+					"name" : "__CMAKE__CXX23@synth_5f8fa36c6907",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "lab1::@e3a54a2ab40fd51109ef",
+					"jsonFile" : "target-lab1-Debug-2aee88aaf7eee49ddcd6.json",
+					"name" : "lab1",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Sarychev/parallel-programming-labs/build",
+		"source" : "C:/Sarychev/parallel-programming-labs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

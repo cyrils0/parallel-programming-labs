@@ -1,0 +1,118 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lab1/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "__CMAKE::CXX23::@e3a54a2ab40fd51109ef"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++latest -MDd -RTC1 -Zi"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					0
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"fileSets" : 
+	[
+		{
+			"baseDirectories" : 
+			[
+				"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/modules"
+			],
+			"name" : "CXX_MODULES",
+			"type" : "CXX_MODULES",
+			"visibility" : "INTERFACE"
+		}
+	],
+	"id" : "__CMAKE__CXX23@synth_5f8fa36c6907::@e3a54a2ab40fd51109ef",
+	"interfaceSources" : 
+	[
+		{
+			"fileSetIndex" : 0,
+			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/modules/std.compat.ixx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/modules/std.ixx",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"name" : "__CMAKE__CXX23@synth_5f8fa36c6907",
+	"paths" : 
+	{
+		"build" : "lab1",
+		"source" : "lab1"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"interfaceSourceIndexes" : 
+			[
+				0,
+				1
+			],
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"compileGroupIndex" : 0,
+			"fileSetIndex" : 0,
+			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/modules/std.ixx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"compileGroupIndex" : 0,
+			"fileSetIndex" : 0,
+			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/modules/std.compat.ixx",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "INTERFACE_LIBRARY"
+}

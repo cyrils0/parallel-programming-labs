@@ -1,0 +1,6 @@
+C:/Sarychev/parallel-programming-labs/build/CMakeFiles/edit_cache.dir
+C:/Sarychev/parallel-programming-labs/build/CMakeFiles/rebuild_cache.dir
+C:/Sarychev/parallel-programming-labs/build/lab1/CMakeFiles/lab1.dir
+C:/Sarychev/parallel-programming-labs/build/lab1/CMakeFiles/edit_cache.dir
+C:/Sarychev/parallel-programming-labs/build/lab1/CMakeFiles/rebuild_cache.dir
+C:/Sarychev/parallel-programming-labs/build/lab1/CMakeFiles/__CMAKE__CXX23@synth_5f8fa36c6907.dir

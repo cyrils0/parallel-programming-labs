@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "lab1\\CMakeFiles\\__CMAKE__CXX23@synth_5f8fa36c6907.dir\\70b2301d7307.bmi",
+            "outputs": [
+                "C:\\Sarychev\\parallel-programming-labs\\build\\vc140.pdb",
+                "lab1\\CMakeFiles\\__CMAKE__CXX23@synth_5f8fa36c6907.dir\\70b2301d7307.bmi.ddi"
+            ],
+            "provides": [
+                {
+                    "logical-name": "std",
+                    "source-path": "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.50.35717\\modules\\std.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
