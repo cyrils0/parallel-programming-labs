@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Sarychev/parallel-programming-labs/build/cmake_install.cmake",
-		"C:/Sarychev/parallel-programming-labs/build/lab1/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
