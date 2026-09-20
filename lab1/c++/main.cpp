@@ -108,25 +108,23 @@ public:
 
 int main(){
 	try{
-    cout << "Текущая папка: " << filesystem::current_path() << "\n";
-
     Matrix A;
     Matrix B;
 
     A.LoadFromFile("matrixA.txt");
     B.LoadFromFile("matrixB.txt");
+    cout << "Размер матриц: " << A.rows() << " x " << A.cols() << "\n";
 
+    auto start = chrono::steady_clock::now();
     Matrix C = A * B;
 
-    cout << "A:\n";
-    cout << A;
+    auto end = chrono::steady_clock::now();
 
-    cout << "\nB:\n";
-    cout << B;
+    auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
 
-    cout << "\nC:\n";
-    cout << C;
-	C.SaveToFile("result.txt");
+    cout << "Время умножения: " << duration.count() << " мкс\n";
+
+    C.SaveToFile("../../lab1/output/result.txt");
 	}catch(const exception& e){
 		cerr << "ошибка" << e.what() << endl;
 	}
