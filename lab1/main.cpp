@@ -1,120 +1,135 @@
-import std; 
-using namespace std;
-
 import std;
 using namespace std;
 
 class Matrix{
 private:
-	int _rows;
-	int _cols;
-	vector<vector<double>> _data;
+    int _rows;
+    int _cols;
+    vector<vector<double>> _data;
+
 public:
-	Matrix(int r, int c){
-		if(r < 0 || c < 0){
-			throw invalid_argument("не верный размер");
-		}
-		_rows = r;
-		_cols = c;
-		_data.assign(r, vector<double>(c, 0));
-	}
-	
-	int rows() const {
-		return _rows;
-	}
-	int cols() const {
-		return _cols;
-	}
-	
-    double& operator()(int r, int c) {
-        if (r < 0 || r >= _rows || c < 0 || c >= _cols) {
-            throw out_of_range("неверный индекс");
+    Matrix(int r, int c){
+        if (r <= 0 || c <= 0)
+        {
+            throw invalid_argument("Неверный размер матрицы");
         }
+
+        _rows = r;
+        _cols = c;
+
+        _data.assign(r, vector<double>(c, 0));
+    }
+	Matrix() : _rows(0), _cols(0) {}
+
+    int rows() const{
+        return _rows;
+    }
+
+    int cols() const{
+        return _cols;
+    }
+
+    double& operator()(int r, int c){
+        if (r < 0 || r >= _rows ||
+            c < 0 || c >= _cols)
+        {
+            throw out_of_range("Неверный индекс");
+        }
+
         return _data[r][c];
-	}
-	double Trace() const {
-		if(_rows != _cols){
-			throw invalid_argument("матрица не квадратная");
-		}
-		double sum = 0;
-		for(int i = 0; i < _rows; i++){
-			sum += _data[i][i];
-		}
-		return sum;
-	}
-	
+    }
 
-	
-	Matrix Transpose(){
-		Matrix newMatrix(_cols, _rows);
-		
-		for(int i = 0; i < _rows; i++){
-			for(int j = 0; j < _cols; j++){
-				newMatrix(j, i) = _data[j][i];
-			}
-		}
-		return newMatrix;
+    const double& operator()(int r, int c) const{
+        if (r < 0 || r >= _rows ||
+            c < 0 || c >= _cols)
+        {
+            throw out_of_range("Неверный индекс");
+        }
 
-	}
-	
-	const double& operator()(int r, int c) const {
-		if(r < 0 || c < 0){
-			throw invalid_argument("не верный индекс");
+        return _data[r][c];
+    }
+	Matrix operator*(const Matrix& other) const{
+		if(_cols != other._rows){
+			throw invalid_argument("нельзя перемножить матрицы");
 		}
-		return (_data[r])[c];
-	}
-	
-	Matrix operator+(const Matrix& other) {
-		if(_rows != other._rows || _cols != other._cols){
-			throw invalid_argument("у матриц разный размер");
-		}
-		Matrix res(_rows, _cols);
+		Matrix res(_rows, other._cols);
 		for(int i = 0; i < _rows; i++){
-			for(int j = 0; j < _cols; j ++){
-				res(i, j) = _data[i][j] + other._data[i][j];
+			for(int j = 0; j < other._cols; j++){
+				for(int k = 0; k < _cols; k++){
+					res(i, j) += (*this)(i, k) * other(k, j);
+				}
 			}
 		}
 		return res;
 	}
-	
-	Matrix& operator+=(const Matrix& other){
-		if(_rows != other._rows || _cols != other._cols){
-			throw invalid_argument("у матриц разный размер");
+	void LoadFromFile(const string& filename){
+		ifstream file(filename);
+		if(!file.is_open()){
+			throw runtime_error("не удалось открыть файл");
 		}
-		
+		file >> _rows >> _cols;
+		_data.assign(_rows, vector<double>(_cols, 0));
+		for(int i =0; i < _rows; i++){
+			for(int j = 0; j < _cols; j++){
+				file >> _data[i][j];
+			}
+		}
+	}
+	void SaveToFile(const string& filename) const{
+		ofstream file(filename);
+		if(!file.is_open()){
+			throw runtime_error("не удалось открыть файл");
+		}
+		file << _rows << " " << _cols << "\n";
 		for(int i = 0; i < _rows; i++){
-			for(int j = 0; j < _cols; j ++){
-				_data[i][j] += other._data[i][j];
+			for(int j = 0; j < _cols; j++){
+				file << _data[i][j] << " ";
 			}
+			file << "\n";
 		}
-		return *this;
-		
-		
 	}
-	
-	friend ostream& operator<<(ostream& out, const Matrix& other){
-		for(int i = 0; i < other._rows; i++){
-			for(int j = 0; j < other._cols; j++){
-				out << other._data[i][j] << " ";
-			}
-			out << "\n";
-		}
-		return out;
-	}
-	
+
+    friend ostream& operator<<(ostream& out, const Matrix& matrix){
+        for (int i = 0; i < matrix._rows; i++)
+        {
+            for (int j = 0; j < matrix._cols; j++)
+            {
+                out << matrix._data[i][j] << " ";
+            }
+
+            out << "\n";
+        }
+
+        return out;
+    }
 };
 
-int main() {
-    try {
-        Matrix m(3, 3);
 
-        m(0, 0) = 1;
-        m(5, 5) = 10; // здесь выбросится исключение
-    }
-    catch (const out_of_range& e) {
-        cout << e.what() << endl;
-    }
 
+int main(){
+	try{
+    cout << "Текущая папка: " << filesystem::current_path() << "\n";
+
+    Matrix A;
+    Matrix B;
+
+    A.LoadFromFile("matrixA.txt");
+    B.LoadFromFile("matrixB.txt");
+
+    Matrix C = A * B;
+
+    cout << "A:\n";
+    cout << A;
+
+    cout << "\nB:\n";
+    cout << B;
+
+    cout << "\nC:\n";
+    cout << C;
+	C.SaveToFile("result.txt");
+	}catch(const exception& e){
+		cerr << "ошибка" << e.what() << endl;
+	}
 
     return 0;
 }
