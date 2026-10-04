@@ -6,4 +6,4 @@ set(CMAKE_CXX_MODULE_STD ON)
 project(parallel-programming-labs CXX)
 
 add_subdirectory(lab1)
-
+add_subdirectory(lab2)
