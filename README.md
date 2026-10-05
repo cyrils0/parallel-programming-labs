@@ -17,7 +17,8 @@
 
 ### Лабораторная работа №2 — параллельная версия
 
-Будет добавлена позже.
+* [Лабораторная работа №2]([https://github.com/cyrils0/parallel-programming-labs/tree/master/lab1](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab2))
+
 
 ## О репозитории
 
