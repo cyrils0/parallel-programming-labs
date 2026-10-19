@@ -17,7 +17,11 @@
 
 ### Лабораторная работа №2 — параллельная версия
 
-Будет добавлена позже.
+* [Лабораторная работа №2](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab2)
+* [Исходный код](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/c%2B%2B/main.cpp)
+* [Генератор тестовых данных](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/generate.py)
+* [Проверка результата](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/verify.py)
+
 
 ## О репозитории
 
