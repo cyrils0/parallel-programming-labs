@@ -22,6 +22,9 @@
 * [Генератор тестовых данных](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/generate.py)
 * [Проверка результата](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/verify.py)
 
+### Лабораторная работа №3 — MPI версия
+ [Лабораторная работа №3](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab3)
+
 
 ## О репозитории
 
