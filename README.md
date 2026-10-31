@@ -23,7 +23,18 @@
 * [Проверка результата](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/verify.py)
 
 ### Лабораторная работа №3 — MPI версия
- [Лабораторная работа №3](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab3)
+
+ * [Лабораторная работа №3](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab3)
+ * [Исходный код](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/c%2B%2B/main.cpp)
+ * [Генератор тестовых данных](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/generate.py)
+ * [Проверка результата](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/verify.py)
+
+### Отчеты по лабораторным работам
+ * [Лабораторная работа №1](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab1/README.md)
+ * [Лабораторная работа №2](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/README.md)
+ * [Лабораторная работа №3]()
+ * [Лабораторная работа №4]()
+ * [Лабораторная работа №5]()
 
 
 ## О репозитории
