@@ -32,7 +32,7 @@
 ### Отчеты по лабораторным работам
  * [Лабораторная работа №1](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab1/README.md)
  * [Лабораторная работа №2](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/README.md)
- * [Лабораторная работа №3]() (не готов)
+ * [Лабораторная работа №3](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/README.md)
  * [Лабораторная работа №4]() (не готов)
  * [Лабораторная работа №5]() (не готов)
 
