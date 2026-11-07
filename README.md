@@ -29,11 +29,18 @@
  * [Генератор тестовых данных](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/generate.py)
  * [Проверка результата](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/verify.py)
 
+### Лабораторная работа №4 — CUDA версия
+
+ * [Лабораторная работа №4](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab4)
+ * [Исходный код CUDA](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab4/c%2B%2B/main.cu)
+ * [Генератор тестовых данных](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab4/generate.py)
+ * [Проверка результата](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab4/verify.py)
+
 ### Отчеты по лабораторным работам
  * [Лабораторная работа №1](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab1/README.md)
  * [Лабораторная работа №2](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab2/README.md)
  * [Лабораторная работа №3](https://github.com/cyrils0/parallel-programming-labs/blob/master/lab3/README.md)
- * [Лабораторная работа №4]() (не готов)
+ * [Лабораторная работа №4](https://github.com/cyrils0/parallel-programming-labs/tree/master/lab4)
  * [Лабораторная работа №5]() (не готов)
 
 
