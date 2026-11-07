@@ -2,3 +2,8 @@
 .idea/
 .venv/
 **/output/
+# Lab 4 downloaded Python packages
+lab4/*.whl
+lab4/*.tar.gz
+lab4/pysocks.json
+lab4/setuptools.json
